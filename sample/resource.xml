@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 
- ~ Copyright (c) ARTIN solutions
+ ~ Copyright (c) Inalogy a.s.
  ~
  ~ Licensed under the Apache License, Version 2.0 (the "License");
  ~ you may not use this file except in compliance with the License.
@@ -24,12 +24,12 @@
 		<filter>
 			<q:equal>
 				<q:path>c:connectorType</q:path>
-				<q:value>io.artin.idm.connector.mattermost.MattermostConnector</q:value>
+				<q:value>com.inalogy.midpoint.connectors.mattermost.MattermostConnector</q:value>
 			</q:equal>
 		</filter>
     </connectorRef>
     <connectorConfiguration xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xsi:type="c:ConnectorConfigurationType">
-        <icfc:configurationProperties xmlns:icfccp="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-mattermost/io.artin.idm.connector.mattermost.MattermostConnector" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="icfc:ConfigurationPropertiesType">
+        <icfc:configurationProperties xmlns:icfccp="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-mattermost/com.inalogy.midpoint.connectors.mattermost.MattermostConnector" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="icfc:ConfigurationPropertiesType">
             <icfccp:trustAllCertificates>true</icfccp:trustAllCertificates>
             <icfccp:serviceAddress>$(mattermost.serviceAddress)</icfccp:serviceAddress>
             <icfccp:username>$(mattermost.username)</icfccp:username>
@@ -44,7 +44,7 @@
             </icfccp:tokenValue>
 
             <icfccp:defaultTeamId>$(mattermost.defaultTeamId)</icfccp:defaultTeamId>
-            <icfccp:defaultChannelIds>$(mattermost.ARTINMainChannel)</icfccp:defaultChannelIds>
+            <icfccp:defaultChannelIds>$(mattermost.InalogyMainChannel)</icfccp:defaultChannelIds>
             <icfccp:defaultChannelIds>$(mattermost.BratislavaChannel)</icfccp:defaultChannelIds>
         </icfc:configurationProperties>
     </connectorConfiguration>
