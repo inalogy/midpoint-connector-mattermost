@@ -32,7 +32,7 @@ jobs:
       - name: Upload Connector
         uses: actions/upload-artifact@v3
         with:
-          name: FreeIPA Connector
+          name: Mattermost Connector
           path: ./target/connector-mattermost-1.0.0.2.jar
       - name: Create Release
         id: create_release
