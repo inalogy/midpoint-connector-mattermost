@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ARTIN solutions
+ * Copyright (c) Inalogy a.s.
  * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.artin.idm.connector.mattermost;
+package com.inalogy.midpoint.connectors.mattermost;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
 import java.util.HashSet;
 import java.util.Properties;
 import java.util.Set;
@@ -27,7 +25,6 @@ import org.identityconnectors.common.logging.Log;
 import org.identityconnectors.common.security.GuardedString;
 import org.identityconnectors.framework.common.objects.*;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 /**
  * @author gpalos
